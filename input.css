@@ -79,3 +79,13 @@ html {
 .slider::-webkit-scrollbar-button {
     display: none;
 }
+
+.card-img {
+    background-position: bottom;
+    background-size: 110%;
+    transition: background-size 0.3s ease, background-position 0.3s ease;
+}
+
+.offer-card:hover .card-img {
+    background-position-y: -5px;
+}

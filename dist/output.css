@@ -771,6 +771,14 @@ video {
   margin-top: 15px;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -870,6 +878,10 @@ video {
   display: none;
 }
 
+.h-\[213px\] {
+  height: 213px;
+}
+
 .h-\[409px\] {
   height: 409px;
 }
@@ -894,8 +906,8 @@ video {
   min-height: 100%;
 }
 
-.w-\[419px\] {
-  width: 419px;
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-\[450px\] {
@@ -1986,6 +1998,26 @@ video {
   background-image: url('../assets/nakrebi3.png');
 }
 
+.bg-\[url\(\'\.\.\/assets\/shet1\.jpg\'\)\] {
+  background-image: url('../assets/shet1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/shet2\.png\'\)\] {
+  background-image: url('../assets/shet2.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/shet3\.png\'\)\] {
+  background-image: url('../assets/shet3.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/shet4\.png\'\)\] {
+  background-image: url('../assets/shet4.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/shet5\.png\'\)\] {
+  background-image: url('../assets/shet5.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2246,6 +2278,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2355,6 +2392,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {
@@ -2661,6 +2702,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2818,6 +2865,16 @@ html {
   display: none;
 }
 
+.card-img {
+  background-position: bottom;
+  background-size: 110%;
+  transition: background-size 0.3s ease, background-position 0.3s ease;
+}
+
+.offer-card:hover .card-img {
+  background-position-y: -5px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2866,6 +2923,16 @@ html {
 .hover\:text-\[\#3395cf\]:hover {
   --tw-text-opacity: 1;
   color: rgb(51 149 207 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\]:hover {
+  color: ;
+}
+
+.hover\:shadow-card-shadow:hover {
+  --tw-shadow: 0 36px 40px -15px rgba(12, 43, 67, .07);
+  --tw-shadow-colored: 0 36px 40px -15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .before\:hover\:text-center:hover::before {
