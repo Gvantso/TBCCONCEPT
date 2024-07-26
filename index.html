@@ -6,11 +6,164 @@
     <title>TBCCONCEPT</title>
     <script src="script.js" defer></script>
     <link href="./dist/output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
 </head>
-<body class="justify-center items-center flex">
-    <h1 class="text-3xl font-bold underline text-red-600">
-        Hello world!
-        test2
-    </h1>
+<body class="bg-[#f9fafa]">
+    <header class="sticky top-0 z-50 bg-white flex items-center justify-center px-[47px] py-[23px] border-b-[1px] border-solid border-[#eef1f1]">
+        <div class="flex items-center justify-between max-w-[1110px] w-full">
+            <img src="./assets/headerlogo.svg" alt="TBC LOGO" />
+            <ul class="flex gap-[31px] text-sm text-[#222222] cursor-pointer">
+                <li>პროდუქტები</li>
+                <li>შეთავაზებები</li>
+                <li>კონცეპტის სივრცე</li>
+            </ul>
+            <div class="flex items-center gap-[16px]">
+                <img src="./assets/headersearch.svg" alt="search" class="cursor-pointer"/>
+                <div class="flex items-center text-[#182CC0] font-bold gap-1 cursor-pointer hover:text-[#3395cf] transition-colors duration-[200ms]">
+                    <img src="./assets/headerarrow.svg" alt="" />
+                    <span>გამოიწერეთ ნაკრები</span>
+                </div>
+                <div class="flex items-center gap-1 cursor-pointer hover:bg-[#e8e8e8] p-[8px] rounded-[6px] transition-colors duration-200">
+                    <img src="./assets/headerlanguage.png" alt="" />
+                    <span>ქარ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="px-[47px] py-[23px] flex justify-center items-center">
+        <div class="max-w-[1110px] w-full">
+            <p class="mb-[56px]">
+                მთავარი
+            </p>
+            <div class="relative flex flex-col items-start text-white p-[80px] bg-[url('../assets/mainimage.png')] w-full min-h-[360px] rounded-[6px]">
+                <span class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[#00000061] rounded-[6px]"></span>
+                <h2 class="font-bold text-2xl z-10">
+                თიბისი კონცეპტი
+               </h2>
+               <p class="w-[450px] mt-[15px] mb-[23px] z-10">
+                პერსონალური საბანკო მომსახურება, მორგებული თქვენს
+                საჭიროებებსა და ინტერესებზე
+               </p>
+               <button class="main-image-button">
+                <img src="./assets/buttonarrow.svg" class="z-10"/>
+                <span class="z-10">გამოიწერეთ</span>
+               </button>   
+            </div> 
+        </div>
+    </main>
+    <div class="w-full flex justify-center px-[47px] pt-[120px] pb-[60px]"> 
+        <p class="max-w-[1110px] w-full text-3xl items-start">
+            გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო, ისე არასაბანკო უპირატესობებით.
+        </p>
+    </div>
+
+    <div class="flex justify-center items-center px-[47px] py-[60px]">
+        <div class="max-w-[1110px] w-full flex flex-col">
+            <h2 class="text-[#141719] text-2xl font-bold mb-[36px]">
+                შეარჩიეთ ნაკრები
+            </h2>
+            <div class="flex w-full min-h-[542px] max-h-[542px] h-full text-white gap-[30px]">
+                <div class="flex-grow-1 w-full flex flex-col gap-[30px]">
+                    <div class="p-[40px] justify-end relative bg-[url('../assets/nakrebi1.png')] w-full h-full rounded-[6px] bg-no-repeat flex flex-col cursor-pointer bundles-image">
+                        <span class="z-[2] absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[#00000040] rounded-[6px]"></span>
+                        <h3 class="z-10 text-xl font-bold mb-[15px]">ციფრული</h3>
+                        <span class="z-10 flex items-center gap-2"><img src="./assets/buttonarrow.svg" /><a class="underline">იხილეთ მეტი</a></span>
+                    </div>
+                    <div class="p-[40px] justify-end relative bg-[url('../assets/nakrebi2.png')] w-full h-full rounded-[6px] bg-no-repeat flex flex-col cursor-pointer bundles-image">
+                        <span class="z-[2] absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[#00000040] rounded-[6px]"></span>
+                        <h3 class="z-10 text-xl font-bold mb-[15px]">პრემიუმი</h3>
+                        <span class="z-10 flex items-center gap-2"><img src="./assets/buttonarrow.svg" /><a class="underline">იხილეთ მეტი</a></span>
+                    </div>
+                </div>
+                <div class="p-[40px] justify-end relative bg-[url('../assets/nakrebi3.png')] w-full min-h-full rounded-[6px] bg-no-repeat flex-grow-1 flex flex-col cursor-pointer bundles-image">
+                    <span class="z-[2] absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-[#00000040] rounded-[6px]"></span>
+                    <h3 class="z-10 text-xl font-bold mb-[15px]">360</h3>
+                    <span class="z-10 flex items-center gap-2"><img src="./assets/buttonarrow.svg" /><a class="underline">იხილეთ მეტი</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center px-[47px] py-[60px]">
+        <div class="max-w-[1110px] w-full gap-5 flex justify-between items-center">
+            <div class="bg-white flex flex-col py-[40px] px-[48px] gap-4 rounded-[6px] flex-1 ">
+                <h1 class="font-bold text-5xl">94 750</h1>
+                <span class="text-[#555f62]">მომხმარებელი</span> 
+            </div>
+            <div class="bg-white flex flex-col py-[40px] px-[48px] gap-4 rounded-[6px] flex-1 ">
+                <h1 class="font-bold text-5xl">150+</h1>
+                <span class="text-[#555f62]">ღონისძიება</span>
+            </div>
+            <div class="bg-white flex flex-col py-[40px] px-[48px] gap-4 rounded-[6px] flex-1 ">
+                <h1 class="font-bold text-5xl">130+</h1>
+                <span class="text-[#555f62]">შეთავაზება</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="flex justify-center items-center px-[47px] py-[60px]">
+        <div class="max-w-[1110px] w-full flex flex-col justify-center items-center">
+            <div class="flex justify-between w-full">
+                <h3>შეთავაზებები</h3>
+                <span>ყველა შეთავაზება</span>
+            </div>
+            <div class="w-full py-[36px] overflow-x-scroll select-none slider" id="slider">
+                <div class="inline-flex flex-row gap-3 select-none">
+                    <div class="hover:shadow-[0 36px 40px -15px rgba(12, 43, 67, .07);] bg-white w-[419px] h-[409px] select-none flex flex-col rounded-[6px] border-solid border-[1px] border-[#e1e4e5]">
+                        <img src="./assets/shet1.jpg" alt="" class="select-none w-full rounded-t-[6px]"/>
+                        <div class="flex flex-col p-[28px]">
+                            <div class="mb-[20px] gap-3 w-full flex">
+                                <span class="text-[#6f787b] text-sm">ჯაზ ფესტივალის შეთავაზებები</span>
+                            </div>
+                            <h2 class="font-bold">IVERIA BEACH - დაიბრუნეთ 30%</h2>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-[0 36px 40px -15px rgba(12, 43, 67, .07);] bg-white w-[419px] h-[409px] select-none flex flex-col rounded-[6px] border-solid border-[1px] border-[#e1e4e5]">
+                        <img src="./assets/shet2.png" alt="" class="select-none w-full rounded-t-[6px]"/>
+                        <div class="flex flex-col p-[28px]">
+                            <div class="mb-[20px] gap-3 w-full flex">
+                                <span class="text-[#6f787b] text-sm">ავტო</span>
+                                <span class="text-[#6f787b] text-sm">თეგეტა მოტორსი</span>
+                            </div>
+                            <h2 class="font-bold">თეგეტა მოტორსი - 50% ფასდაკლება</h2>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-[0 36px 40px -15px rgba(12, 43, 67, .07);] bg-white w-[419px] h-[409px] select-none flex flex-col rounded-[6px] border-solid border-[1px] border-[#e1e4e5]">
+                        <img src="./assets/shet3.png" alt="" class="select-none w-full rounded-t-[6px]"/>
+                        <div class="flex flex-col p-[28px]">
+                            <div class="mb-[20px] gap-3 w-full flex">
+                                <span class="text-[#6f787b] text-sm">ავტო</span>
+                                <span class="text-[#6f787b] text-sm">ჯაზ ფესტივალის შეთავაზებები</span>
+                                <span class="text-[#6f787b] text-sm">თეგეტა მოტორსი</span>
+                            </div>
+                            <h2 class="font-bold">თეგეტა მოტორსი - ბათუმი</h2>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-[0 36px 40px -15px rgba(12, 43, 67, .07);] bg-white w-[419px] h-[409px] select-none flex flex-col rounded-[6px] border-solid border-[1px] border-[#e1e4e5]">
+                        <img src="./assets/shet4.png" alt="" class="select-none w-full rounded-t-[6px]"/>
+                        <div class="flex flex-col p-[28px]">
+                            <div class="mb-[20px] gap-3 w-full flex">
+                                <span class="text-[#6f787b] text-sm">დასვენება</span>
+                                <span class="text-[#6f787b] text-sm">ვიზა</span>
+                                <span class="text-[#6f787b] text-sm">ჯაზ ფესტივალის შეთავაზებები</span>
+                            </div>
+                            <h2 class="font-bold">Le Meridien Batumi - 10%-იანი ფასდაკლება</h2>
+                        </div>
+                    </div>
+                    <div class="hover:shadow-[0 36px 40px -15px rgba(12, 43, 67, .07);] bg-white w-[419px] h-[409px] select-none flex flex-col rounded-[6px] border-solid border-[1px] border-[#e1e4e5]">
+                        <img src="./assets/shet5.png" alt="" class="select-none w-full rounded-t-[6px]"/>
+                        <div class="flex flex-col p-[28px]">
+                            <div class="mb-[20px] gap-3 w-full flex">
+                                <span class="text-[#6f787b] text-sm">დასვენება</span>
+                                <span class="text-[#6f787b] text-sm">ვიზა</span>
+                                <span class="text-[#6f787b] text-sm">ჯაზ ფესტივალის შეთავაზებები</span>
+                            </div>
+                            <h2 class="font-bold">Colosseum Marina Hotel - 15%-იანი ფასდაკლება</h2>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
