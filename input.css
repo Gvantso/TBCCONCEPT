@@ -1,3 +1,174 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+    font-family: "TBC X", "arial";
+}
+
+p {
+    font-family: "TBC X";
+}
+
+.main-image-button {
+    display: flex; 
+    position: relative;
+    z-index: 10; 
+    gap: 0.5rem; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 23px;
+    padding: 18px 24px;
+    border-radius: 4px;
+    background: linear-gradient(15deg, #001682, #3240e5);
+}
+
+.main-image-button:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 4px;
+    background-image: linear-gradient(15deg, #3395cf, #3395cf);
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.main-image-button:hover::after {
+    opacity: 1; 
+}
+
+.bundles-image {
+    background-size: 100%;
+    background-position: center;
+    transition: all 200ms ease-in-out;
+}
+
+.bundles-image:nth-child(2) {
+    background-size: 180%;
+}
+
+#bundles-image2 {
+    background-position: right;
+}
+
+.bundles-image:hover {
+    background-size: 103%;
+}
+
+.bundles-image:nth-child(2):hover {
+    background-size: 183%;
+}
+
+.slider {
+    cursor: grab;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+.slider::-webkit-scrollbar {
+    height: 2px;
+}
+  /* Define the thumb style */
+.slider::-webkit-scrollbar-thumb {
+    background: #192cc1;
+    border-radius: 5px;
+}
+  /* Define the track style */
+.slider::-webkit-scrollbar-track {
+    background-color: #dbdbdb;
+}
+
+.slider::-webkit-scrollbar-button {
+    display: none;
+}
+
+.card-img {
+    background-position: top;
+    background-size: 110%;
+    transition: background-position 400ms ease;
+}
+
+.offer-card {
+    box-shadow: none;
+    transition: all 400ms ease;
+}
+
+.offer-card:hover {
+    box-shadow: 0 36px 40px -15px rgba(12, 43, 67, .07);
+}
+
+.offer-card:hover .card-img {
+    background-position-y: -4px;
+}
+
+@media (max-width: 1024px) {
+    .bundles-image {
+        background-size: cover;
+    }
+    .bundles-image:nth-child(2) {
+        background-size: cover;
+        background-position: left;
+    }
+    .bundles-image:hover {
+        background-size: cover;
+    }
+    
+    .bundles-image:nth-child(2):hover {
+        background-size: cover;
+    }
+    #span1 {
+        transition: all 400ms ease;
+    }
+    #span3 {
+        transition: all 400ms ease;
+    }
+    #span2 {
+        transition: all 300ms ease;
+    }
+    .span1-active {
+        width: 100%;
+        transform: rotate(45deg) translateY(10px);
+    }
+    .span2-active {
+        opacity: 0;
+    }
+    .span3-active {
+        width: 100%;
+        transform: rotate(-45deg) translateY(-10px);
+    }
+
+    #nav-menu {
+        transition: all 300ms ease;
+    }
+
+    .nav-active {
+        opacity: 1;
+        pointer-events: all;
+    }
+    .hidden-items {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 400ms ease;
+    }
+    .handler-arrows {
+        transform: rotate(0deg);
+    }
+    .arrow-active {
+        transform: rotate(180deg);
+        transition: all 400ms ease;
+    }
+    .main-image-button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bundles-image {
+        background-size: cover;
+    }
+}
