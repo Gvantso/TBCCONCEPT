@@ -1015,6 +1015,11 @@ video {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .min-w-\[280px\] {
   min-width: 280px;
 }
