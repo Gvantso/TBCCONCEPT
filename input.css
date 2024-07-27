@@ -7,6 +7,9 @@ html {
     font-family: "TBC X", "arial";
 }
 
+p {
+    font-family: "TBC X";
+}
 
 .main-image-button {
     display: flex; 
