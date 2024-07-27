@@ -911,8 +911,8 @@ video {
   display: none;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-\[100svh\] {
+  height: 100svh;
 }
 
 .h-\[136px\] {
@@ -2298,19 +2298,14 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .px-\[32px\] {
   padding-left: 32px;
   padding-right: 32px;
-}
-
-.px-\[45px\] {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.px-\[47px\] {
-  padding-left: 47px;
-  padding-right: 47px;
 }
 
 .px-\[48px\] {
@@ -2368,16 +2363,6 @@ video {
   padding-bottom: 60px;
 }
 
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[15px\] {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .pb-\[45px\] {
   padding-bottom: 45px;
 }
@@ -2400,6 +2385,18 @@ video {
 
 .pt-\[80px\] {
   padding-top: 80px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
+.pb-\[0px\] {
+  padding-bottom: 0px;
+}
+
+.pb-\[80px\] {
+  padding-bottom: 80px;
 }
 
 .text-left {
@@ -3330,24 +3327,24 @@ p {
     padding: 40px;
   }
 
-  .md\:px-\[0\] {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .md\:px-\[47px\] {
-    padding-left: 47px;
-    padding-right: 47px;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
 
+  .md\:px-\[0\] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .md\:px-\[45px\] {
     padding-left: 45px;
     padding-right: 45px;
+  }
+
+  .md\:px-\[47px\] {
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }
 
