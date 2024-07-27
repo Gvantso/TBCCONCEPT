@@ -107,9 +107,6 @@ p {
 }
 
 @media (max-width: 1024px) {
-    body {
-        overflow-x: hidden;
-    }
     .bundles-image {
         background-size: cover;
     }
