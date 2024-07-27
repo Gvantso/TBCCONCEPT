@@ -78,3 +78,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// code for mobile nav menu and nav button span animations
+
+const hamMenu = document.getElementById("ham")
+const hamFirst = document.getElementById("span1")
+const hamSecond = document.getElementById("span2")
+const hamThird = document.getElementById("span3")
+
+const navMenu = document.getElementById("nav-menu")
+// const headerList = document.getElementById("header-list")
+
+// const pageOverlay = document.getElementById("page-overlay")
+
+hamMenu.addEventListener('click', function () {
+
+    hamFirst.classList.toggle("span1-active")
+    hamSecond.classList.toggle("span2-active")
+    hamThird.classList.toggle("span3-active")
+
+    navMenu.classList.toggle("nav-active")
+})
+
+const handlers = document.querySelectorAll(".handler");
+const handlerArrows = document.querySelectorAll(".handler-arrow");
+
+handlers.forEach((handler, index) => {
+    handler.addEventListener("click", function() {
+        const hiddenItems = this.nextElementSibling;
+        const handlerArrow = handlerArrows[index];
+
+        // Close all other handlers which are open excluding the one which is clicked
+        handlers.forEach((otherHandler, otherIndex) => {
+            if (otherHandler !== handler) {
+                const otherHiddenItems = otherHandler.nextElementSibling;
+                otherHiddenItems.style.maxHeight = "0";
+                otherHiddenItems.style.paddingBottom = "0";
+                handlerArrows[otherIndex].classList.remove("arrow-active");
+            }
+        });
+
+        // Toggle the clicked handler
+        if (hiddenItems.style.maxHeight === "0px" || hiddenItems.style.maxHeight === "") {
+            hiddenItems.style.maxHeight = hiddenItems.scrollHeight + 16 + "px";
+            hiddenItems.style.paddingTop = "16px";
+            handlerArrow.classList.add("arrow-active");
+        } else {
+            hiddenItems.style.maxHeight = "0";
+            hiddenItems.style.paddingBottom = "0";
+            handlerArrow.classList.toggle("arrow-active");
+        }
+    });
+});

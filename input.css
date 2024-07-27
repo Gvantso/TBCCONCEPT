@@ -51,6 +51,10 @@ p {
     background-size: 180%;
 }
 
+#bundles-image2 {
+    background-position: right;
+}
+
 .bundles-image:hover {
     background-size: 103%;
 }
@@ -100,4 +104,71 @@ p {
 
 .offer-card:hover .card-img {
     background-position-y: -4px;
+}
+
+@media (max-width: 1024px) {
+    .bundles-image {
+        background-size: cover;
+    }
+    .bundles-image:nth-child(2) {
+        background-size: cover;
+        background-position: left;
+    }
+    .bundles-image:hover {
+        background-size: cover;
+    }
+    
+    .bundles-image:nth-child(2):hover {
+        background-size: cover;
+    }
+    #span1 {
+        transition: all 400ms ease;
+    }
+    #span3 {
+        transition: all 400ms ease;
+    }
+    #span2 {
+        transition: all 300ms ease;
+    }
+    .span1-active {
+        width: 100%;
+        transform: rotate(45deg) translateY(10px);
+    }
+    .span2-active {
+        opacity: 0;
+    }
+    .span3-active {
+        width: 100%;
+        transform: rotate(-45deg) translateY(-10px);
+    }
+
+    #nav-menu {
+        transition: all 300ms ease;
+    }
+
+    .nav-active {
+        opacity: 1;
+        pointer-events: all;
+    }
+    .hidden-items {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 400ms ease;
+    }
+    .handler-arrows {
+        transform: rotate(0deg);
+    }
+    .arrow-active {
+        transform: rotate(180deg);
+        transition: all 400ms ease;
+    }
+    .main-image-button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bundles-image {
+        background-size: cover;
+    }
 }
