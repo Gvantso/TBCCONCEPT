@@ -73,7 +73,7 @@ html {
 }
   /* Define the track style */
 .slider::-webkit-scrollbar-track {
-    background-color: #ebebeb;
+    background-color: #dbdbdb;
 }
 
 .slider::-webkit-scrollbar-button {
@@ -81,11 +81,20 @@ html {
 }
 
 .card-img {
-    background-position: bottom;
+    background-position: top;
     background-size: 110%;
-    transition: background-size 0.3s ease, background-position 0.3s ease;
+    transition: background-position 400ms ease;
+}
+
+.offer-card {
+    box-shadow: none;
+    transition: all 400ms ease;
+}
+
+.offer-card:hover {
+    box-shadow: 0 36px 40px -15px rgba(12, 43, 67, .07);
 }
 
 .offer-card:hover .card-img {
-    background-position-y: -5px;
+    background-position-y: -4px;
 }
