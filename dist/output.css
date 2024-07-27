@@ -1011,13 +1011,13 @@ video {
   width: weird-and-invalid;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-\[280px\] {
@@ -3306,6 +3306,10 @@ p {
 
   .md\:w-\[initial\] {
     width: initial;
+  }
+
+  .md\:w-\[450px\] {
+    width: 450px;
   }
 
   .md\:flex-row {
