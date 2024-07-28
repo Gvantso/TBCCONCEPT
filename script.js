@@ -1,3 +1,6 @@
+
+// code for sliders
+
 document.addEventListener('DOMContentLoaded', () => {
     const sliders = document.querySelectorAll('.slider');
     
@@ -88,9 +91,6 @@ const hamSecond = document.getElementById("span2")
 const hamThird = document.getElementById("span3")
 
 const navMenu = document.getElementById("nav-menu")
-// const headerList = document.getElementById("header-list")
-
-// const pageOverlay = document.getElementById("page-overlay")
 
 hamMenu.addEventListener('click', function () {
 
